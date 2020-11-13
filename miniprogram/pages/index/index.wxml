@@ -1,0 +1,48 @@
+<button class="empty"></button>
+<view class="margin-xl padding-xl bg-white radius shadow shadow-lg">
+  <view class="flex justify-center">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo" class='cu-btn round bg-green shadow'> 获取头像昵称 </button>
+    <block wx:else>
+      <view class='text-center'>
+        <view class="cu-avatar xl round solids" style="background-image:url({{userInfo.avatarUrl}})"></view>
+        <view class="padding">{{userInfo.nickName}}</view>
+      </view>
+    </block>
+  </view>
+</view>
+<view class="text-center margin-top">
+  <text class="text-grey text-xl">{{motto}}</text>
+</view>
+<button class="empty"></button>
+<view class="boox" style="position:fixed; bottom:0;width: 750rpx;">
+  <view class="cu-bar tabbar bg-white">
+    <view class="action" bindtap="tofirstpage">
+      <view class="cuIcon-cu-image">
+        <image src="/pages/home.png"></image>
+      </view>
+      <view class="text-gray">首页</view>
+    </view>
+    <view class="action" bindtap="toshowdata">
+      <view class="cuIcon-cu-image">
+        <image src="/pages/showdata.png"></image>
+      </view>
+      <view class="text-gray">检查清单</view>
+    </view>
+    <view class="action" bindtap="tocheckline">
+      <view class="cuIcon-cu-image">
+        <view class="list">
+        <image src="/pages/list.png"></image>
+      </view>
+      </view>
+      <view class="text-gray">检查状况</view>
+    </view>
+    <view class="action">
+      <view class="cuIcon-cu-image">
+        <view class="info">
+        <image src="/pages/info.png"></image>
+      </view>
+      </view>
+      <view class="text-gray">个人信息</view>
+    </view>
+  </view>
+</view>

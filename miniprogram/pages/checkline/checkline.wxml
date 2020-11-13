@@ -1,0 +1,214 @@
+<!--pages/checkline/checkline.wxml-->
+
+<view class="icon-box">
+			<i class="weui-icon-warn weui-icon_msg"></i>
+			<view class="icon-box__ctn">
+                <h4 class="icon-box__title">表示需要整改的项目</h4>
+			</view>
+        </view>
+        <view class="icon-box">
+			<i class="weui-icon-success weui-icon_msg"></i>
+			<view class="icon-box__ctn">
+                <h3 class="icon-box__title">表示此次检查通过</h3>
+			</view>
+        </view>
+        <view class="icon-box">
+			<i class="weui-icon-waiting weui-icon_msg"></i>
+			<view class="icon-box__ctn">
+                <h3 class="icon-box__title">表示尚未检查完</h3>
+			</view>
+        </view>
+        <view class="a1">以下为此次检查结果</view>
+
+<view class="icon-box">
+			<i class="{{type}}"></i>
+			<view class="icon-box__ctn">
+                <h3 class="icon-box__title">信息学院</h3>
+                <h4>    
+                        <navigator url="/pages/firstpage/science/xinxi/xinxi" class="item-link">查看详情</navigator>
+                </h4>
+
+			</view>
+        </view>
+<view class="icon-box">
+                        <i class="{{typewutian}}"></i>
+                        <view class="icon-box__ctn">
+                <h3 class="icon-box__title">物天学院</h3>
+                <h4>    
+                        <navigator url="/pages/firstpage/science/wutian/wutian" class="item-link">查看详情</navigator>
+                </h4>
+
+                        </view>
+        </view>
+<view class="icon-box">
+                        <i class="{{typeshutong}}"></i>
+                        <view class="icon-box__ctn">
+                <h3 class="icon-box__title">数统学院</h3>
+                <h4>    
+                        <navigator url="/pages/firstpage/science/shutong/shutong" class="item-link">查看详情</navigator>
+                </h4>
+
+                        </view>
+        </view>
+<view class="icon-box">
+                        <i class="{{typeruanjian}}"></i>
+                        <view class="icon-box__ctn">
+                <h3 class="icon-box__title">软件学院</h3>
+                <h4>    
+                        <navigator url="/pages/firstpage/science/ruanjian/ruanjian" class="item-link">查看详情</navigator>
+                </h4>
+
+                        </view>
+        </view>
+<view class="icon-box">
+                        <i class="{{typeshenghuan}}"></i>
+                        <view class="icon-box__ctn">
+                <h3 class="icon-box__title">生环学院</h3>
+                <h4>    
+                        <navigator url="/pages/firstpage/science/shenghuan/shenghuan" class="item-link">查看详情</navigator>
+                </h4>
+
+                        </view>
+        </view>
+<view class="icon-box">
+                        <i class="{{typeshengke}}"></i>
+                        <view class="icon-box__ctn">
+                <h3 class="icon-box__title">生科学院</h3>
+                <h4>    
+                        <navigator url="/pages/firstpage/science/shengke/shengke" class="item-link">查看详情</navigator>
+                </h4>
+
+                        </view>
+        </view>
+<view class="icon-box">
+                        <i class="{{typehuagong}}"></i>
+                        <view class="icon-box__ctn">
+                <h3 class="icon-box__title">化工学院</h3>
+                <h4>    
+                        <navigator url="/pages/firstpage/science/huagong/huagong" class="item-link">查看详情</navigator>
+                </h4>
+
+                        </view>
+        </view>
+        <view class="icon-box">
+                        <i class="{{typeminzu}}"></i>
+                        <view class="icon-box__ctn">
+                <h3 class="icon-box__title">民族学院</h3>
+                <h4>    
+                        <navigator url="/pages/firstpage/literary/minzu/minzu" class="item-link">查看详情</navigator>
+                </h4>
+
+                        </view>
+        </view>
+<view class="icon-box">
+                        <i class="{{typewenxue}}"></i>
+                        <view class="icon-box__ctn">
+                <h3 class="icon-box__title">文学院</h3>
+                <h4>    
+                        <navigator url="/pages/firstpage/literary/wenxue/wenxue" class="item-link">查看详情</navigator>
+                </h4>
+
+                        </view>
+        </view>
+<view class="icon-box">
+                        <i class="{{typejingji}}"></i>
+                        <view class="icon-box__ctn">
+                <h3 class="icon-box__title">经济学院</h3>
+                <h4>    
+                        <navigator url="/pages/firstpage/literary/jingji/jingji" class="item-link">查看详情</navigator>
+                </h4>
+
+                        </view>
+        </view>
+<view class="icon-box">
+                        <i class="{{typetiyu}}"></i>
+                        <view class="icon-box__ctn">
+                <h3 class="icon-box__title">体育学院</h3>
+                <h4>    
+                        <navigator url="/pages/firstpage/literary/tiyu/tiyu" class="item-link">查看详情</navigator>
+                </h4>
+
+                        </view>
+        </view>
+<view class="icon-box">
+                        <i class="{{typemingyuan}}"></i>
+                        <view class="icon-box__ctn">
+                <h3 class="icon-box__title">明远楼</h3>
+                <h4>    
+                        <navigator url="/pages/firstpage/office/mingyuan/mingyuan" class="item-link">查看详情</navigator>
+                </h4>
+
+                        </view>
+        </view>
+<view class="icon-box">
+                        <i class="{{typegongguan}}"></i>
+                        <view class="icon-box__ctn">
+                <h3 class="icon-box__title">公管学院</h3>
+                <h4>    
+                        <navigator url="/pages/firstpage/literary/gongguan/gongguan" class="item-link">查看详情</navigator>
+                </h4>
+
+                        </view>
+        </view>
+<view class="icon-box">
+                        <i class="{{typegewu}}"></i>
+                        <view class="icon-box__ctn">
+                <h3 class="icon-box__title">格物楼</h3>
+                <h4>    
+                        <navigator url="/pages/firstpage/office/gewu/gewu" class="item-link">查看详情</navigator>
+                </h4>
+
+                        </view>
+        </view>
+        <button class="empty"></button>
+<view class="boox" style="position:fixed; bottom:0;width: 750rpx;">
+  <view class="cu-bar tabbar bg-white">
+    <view class="action" bindtap="tofirstpage">
+      <view class="cuIcon-cu-image">
+        <image src="/pages/home.png"></image>
+      </view>
+      <view class="text-gray">首页</view>
+    </view>
+    <view class="action" bindtap="toshowdata">
+      <view class="cuIcon-cu-image">
+        <image src="/pages/showdata.png"></image>
+      </view>
+      <view class="text-gray">检查清单</view>
+    </view>
+    <view class="action">
+      <view class="cuIcon-cu-image">
+        <view class="list">
+        <image src="/pages/list.png"></image>
+      </view>
+      </view>
+      <view class="text-gray">检查状况</view>
+    </view>
+    <view class="action" bindtap="toindex">
+      <view class="cuIcon-cu-image">
+        <view class="info">
+        <image src="/pages/info.png"></image>
+      </view>
+      </view>
+      <view class="text-gray">个人信息</view>
+    </view>
+  </view>
+</view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

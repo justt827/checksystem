@@ -1,0 +1,157 @@
+<!--pages/firstpage/science/xinxi/lab1/lab1.wxml-->
+<!--pages/infor_school/check4/check4.wxml-->
+<view class="icon-box" id="num1">
+			<i class="i:weui-icon-info weui-icon_msg"></i>
+			<view class="icon-box__ctn">
+				<h3 class="icon-box__title">请拍下该实验室安全管理人照片</h3>
+			</view>
+        </view>
+<view wx:for-items="{{imgurl}}" wx:for-item="item" wx:key="*this">
+  <image mode="widthFix" src="{{item}}"></image>
+</view>
+<image class="camera" bindtap="chooseImg" src="/pages/camera.png"></image>
+<button bindtap="chooseImg">拍照</button>
+<view class="icon-box" id="num1">
+			<i class="i:weui-icon-info weui-icon_msg"></i>
+			<view class="icon-box__ctn">
+				<h3 class="icon-box__title">请拍下该实验室管理规定</h3>
+			</view>
+        </view>
+<view wx:for-items="{{exam}}" wx:for-item="item" wx:key="*this">
+  <image mode="widthFix" src="{{item}}"></image>
+</view>
+<image class="camera" bindtap="chooseImg1" src="/pages/camera.png"></image>
+<button bindtap="chooseImg1">拍照</button>
+<view class="icon-box" id="num1">
+			<i class="i:weui-icon-info weui-icon_msg"></i>
+			<view class="icon-box__ctn">
+				<h3 class="icon-box__title">请拍下该实验室原材料进货登记</h3>
+			</view>
+        </view>
+<view wx:for-items="{{exam1}}" wx:for-item="item" wx:key="*this">
+  <image mode="widthFix" src="{{item}}"></image>
+</view>
+<image class="camera" bindtap="chooseImg2" src="/pages/camera.png"></image>
+<button bindtap="chooseImg2">拍照</button>
+<view class="icon-box" id="num1">
+			<i class="i:weui-icon-info weui-icon_msg"></i>
+			<view class="icon-box__ctn">
+				<h3 class="icon-box__title">请拍下该实验室环境</h3>
+			</view>
+        </view>
+<view wx:for-items="{{exam2}}" wx:for-item="item" wx:key="*this">
+  <image mode="widthFix" src="{{item}}"></image>
+</view>
+<image class="camera" bindtap="chooseImg3" src="/pages/camera.png"></image>
+<button bindtap="chooseImg3">拍照</button>
+<view class="icon-box" id="num1">
+			<i class="i:weui-icon-info weui-icon_msg"></i>
+			<view class="icon-box__ctn">
+				<h3 class="icon-box__title">请拍下该实验室原料管理（5双）</h3>
+			</view>
+        </view>
+<view wx:for-items="{{exam3}}" wx:for-item="item" wx:key="*this">
+  <image mode="widthFix" src="{{item}}"></image>
+</view>
+<image class="camera" bindtap="chooseImg4" src="/pages/camera.png"></image>
+<button bindtap="chooseImg4">拍照</button>
+<view class="icon-box" id="num1">
+			<i class="i:weui-icon-info weui-icon_msg"></i>
+			<view class="icon-box__ctn">
+				<h3 class="icon-box__title">请拍下该实验室消防器材</h3>
+			</view>
+        </view>
+<view wx:for-items="{{exam4}}" wx:for-item="item" wx:key="*this">
+  <image mode="widthFix" src="{{item}}"></image>
+</view>
+<image class="camera" bindtap="chooseImg5" src="/pages/camera.png"></image>
+<button bindtap="chooseImg5">拍照</button>
+
+
+<view class="icon-box" id="num1">
+			<i class="i:weui-icon-info weui-icon_msg"></i>
+			<view class="icon-box__ctn">
+				<h3 class="icon-box__title">请核对以下检查信息</h3>
+			</view>
+        </view>
+<radio-group>
+	<view class="page-boday">
+	<view class="page-section"bindtap="checkboxChange1" >
+	<view class="weui-cells weui-cells_after-title">
+	<label class="weui-cell weui-check__label">
+            <view class="weui-cell__hd">
+              <checkbox checked="{{item1.checked}}">无问题</checkbox>
+            </view>
+            <view class="weui-cell__bd">{{item.name}}</view>
+		  </label>
+	</view>
+</view></view>
+
+
+	<view class="page-body">
+    <view class="page-section">
+      <view class="weui-cells weui-cells_after-title">
+        <checkbox-group bindchange="checkboxChange">
+          <label class="weui-cell weui-check__label" wx:for="{{items}}" wx:key="{{item.value}}">
+            <view class="weui-cell__hd">
+              <checkbox value="{{item.value}}" checked="{{item.checked}}"/>
+            </view>
+            <view class="weui-cell__bd">{{item.name}}</view>
+          </label>
+        </checkbox-group>
+      </view>
+    </view>
+  </view>
+
+
+</radio-group>
+  <!--<view class="page-body">
+    <view class="page-section">
+      <view class="weui-cells weui-cells_after-title">
+        <checkbox-group bindchange="checkboxChange">
+          <label class="weui-cell weui-check__label" wx:for="{{items}}" wx:key="{{item.value}}">
+            <view class="weui-cell__hd">
+              <checkbox value="{{item.value}}" checked="{{item.checked}}"/>
+            </view>
+            <view class="weui-cell__bd">{{item.name}}</view>
+          </label>
+        </checkbox-group>
+      </view>
+    </view>
+  </view>  -->
+<image class="tijiao" src="/pages/tijiao.png" bindtap="showToast"></image>
+<button class="photo_but" bindtap="showToast">提交</button>
+
+<button class="empty"></button>
+<view class="boox" style="position:fixed; bottom:0;width: 750rpx;">
+  <view class="cu-bar tabbar bg-white">
+    <view class="action" bindtap="tofirstpage">
+      <view class="cuIcon-cu-image">
+        <image src="/pages/home.png"></image>
+      </view>
+      <view class="text-gray">首页</view>
+    </view>
+    <view class="action" bindtap="toshowdata">
+      <view class="cuIcon-cu-image">
+        <image src="/pages/showdata.png"></image>
+      </view>
+      <view class="text-gray">检查清单</view>
+    </view>
+    <view class="action" bindtap="tocheckline">
+      <view class="cuIcon-cu-image">
+        <view class="list">
+        <image src="/pages/list.png"></image>
+      </view>
+      </view>
+      <view class="text-gray">检查状况</view>
+    </view>
+    <view class="action" bindtap="toindex">
+      <view class="cuIcon-cu-image">
+        <view class="info">
+        <image src="/pages/info.png"></image>
+      </view>
+      </view>
+      <view class="text-gray">个人信息</view>
+    </view>
+  </view>
+</view>

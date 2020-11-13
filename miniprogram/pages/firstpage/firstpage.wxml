@@ -1,0 +1,64 @@
+<!--pages/firstpage/firstpage.wxml-->
+<view class="content1">
+<image class="photo" bindtap="change1" src="/pages/firstpage/science.png"></image>
+<image class="photo" bindtap="change2" src="/pages/firstpage/literary.png"></image>
+</view>
+<view class="content">
+  <view class="changeleft">
+    <button bindtap="science">理工科学院
+    </button>
+  </view>
+  <view class="changeright">
+    <button bindtap="literary">文科学院
+    </button>
+  </view>
+</view>
+
+<view class="content">
+  <image class="photo" bindtap="change3" src="/pages/firstpage/office.png"></image>
+  <image class="photo" bindtap="change4" src="/pages/firstpage/sservice.png"></image>
+</view>
+<view class="content">
+  <view class="changeleft">
+    <button bindtap="office">办公地点
+    </button>
+  </view>
+  <view class="changeright">
+    <button bindtap="sservice">服务保障
+    </button>
+  </view>
+</view>
+
+<button class="empty"></button>
+<view class="boox" style="position:fixed; bottom:0;width: 750rpx;">
+  <view class="cu-bar tabbar bg-white">
+    <view class="action">
+      <view class="cuIcon-cu-image">
+        <image src="/pages/home.png"></image>
+      </view>
+      <view class="text-gray">首页</view>
+    </view>
+    <view class="action" bindtap= "toshowdata">
+      <view class="cuIcon-cu-image">
+        <image src="/pages/showdata.png"></image>
+      </view>
+      <view class="text-gray">检查清单</view>
+    </view>
+    <view class="action" bindtap="tocheckline">
+      <view class="cuIcon-cu-image">
+        <view class="list">
+        <image src="/pages/list.png"></image>
+      </view>
+      </view>
+      <view class="text-gray">检查状况</view>
+    </view>
+    <view class="action" bindtap="toindex">
+      <view class="cuIcon-cu-image">
+        <view class="info">
+        <image src="/pages/info.png"></image>
+      </view>
+      </view>
+      <view class="text-gray">个人信息</view>
+    </view>
+  </view>
+</view>

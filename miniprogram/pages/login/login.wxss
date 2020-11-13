@@ -1,0 +1,11 @@
+/* pages/login/login.wxss */
+.bblog{
+  margin-top: 0.5cm;
+  background-color:rgb(233, 233, 233);
+}
+.putin{
+  margin-top: 1cm;
+}
+.inputname{
+  font-size: xx-large;
+}

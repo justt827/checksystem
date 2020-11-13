@@ -1,0 +1,8 @@
+<!--pages/login/login.wxml-->
+<image src='/pages/ptitle.png' mode='widthFix' class='png' style='width:100%;height:486rpx'></image>
+<view class="putin">
+<i-input bind:change='inputName' maxlength="15" title="账号" placeholder="请输入账号(可直接登录)" />
+<i-input bind:change='inputPassword' maxlength="15" title="密码"  placeholder="请输入密码" />
+</view>
+
+<button class="bblog" bindtap='bloginn'>登录</button>

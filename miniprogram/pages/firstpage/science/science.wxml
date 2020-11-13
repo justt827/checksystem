@@ -1,0 +1,90 @@
+<!--pages/firstpage/science/science.wxml-->
+<view class="content">
+  <image class="photo" bindtap="xinxi" src="/pages/firstpage/science/xinxi.png"></image>
+  <image class="photo" bindtap="shenghuan" src="/pages/firstpage/science/shenghuan.png"></image>
+</view>
+<view class="content">
+  <view class="changeleft">
+    <button bindtap="xinxi">信息学院
+    </button>
+  </view>
+  <view class="changeright">
+    <button bindtap="shenghuan">生态学与环境学院
+    </button>
+  </view>
+</view>
+<view class="content">
+  <image class="photo" bindtap="wutian" src="/pages/firstpage/science/wutian.png"></image>
+  <image class="photo" bindtap="ruanjian" src="/pages/firstpage/science/ruanjian.png"></image>
+</view>
+<view class="content">
+  <view class="changeleft">
+    <button bindtap="wutian">物理与天文学院
+    </button>
+  </view>
+  <view class="changeright">
+    <button bindtap="ruanjian">软件学院
+    </button>
+  </view>
+</view>
+<view class="content">
+  <image class="photo" bindtap="shengke" src="/pages/firstpage/science/shengke.png"></image>
+  <image class="photo" bindtap="huagong" src="/pages/firstpage/science/huagong.png"></image>
+</view>
+<view class="content">
+  <view class="changeleft">
+    <button bindtap="shengke">生命科学学院
+    </button>
+  </view>
+  <view class="changeright">
+    <button bindtap="huagong">化工学院
+    </button>
+  </view>
+</view>
+<view class="content">
+  <image class="photo" bindtap="tiyu" src="/pages/firstpage/science/tiyu.png"></image>
+  <image class="photo" bindtap="shutong" src="/pages/firstpage/science/shutong.png"></image>
+</view>
+<view class="content">
+  <view class="changeleft">
+    <button bindtap="tiyu">体育学院
+    </button>
+  </view>
+  <view class="changeright">
+    <button bindtap="shutong">数学与统计学院
+    </button>
+  </view>
+</view>
+<button class="empty"></button>
+<view class="boox" style="position:fixed; bottom:0;width: 750rpx;">
+  <view class="cu-bar tabbar bg-white">
+    <view class="action" bindtap="tofirstpage">
+      <view class="cuIcon-cu-image">
+        <image src="/pages/home.png"></image>
+      </view>
+      <view class="text-gray">首页</view>
+    </view>
+    <view class="action" bindtap="toshowdata">
+      <view class="cuIcon-cu-image">
+        <image src="/pages/showdata.png"></image>
+      </view>
+      <view class="text-gray">检查清单</view>
+    </view>
+    <view class="action" bindtap="tocheckline">
+      <view class="cuIcon-cu-image">
+        <view class="list">
+        <image src="/pages/list.png"></image>
+      </view>
+      </view>
+      <view class="text-gray">检查状况</view>
+    </view>
+    <view class="action" bindtap="toindex">
+      <view class="cuIcon-cu-image">
+        <view class="info">
+        <image src="/pages/info.png"></image>
+      </view>
+      </view>
+      <view class="text-gray">个人信息</view>
+    </view>
+  </view>
+</view>

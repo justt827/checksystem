@@ -1,0 +1,56 @@
+<!--miniprogram/pages/showdata/showdata.wxml-->
+<view class="table">
+   <view class="tr bg-w">
+     <view class="th">地点</view>
+     <view class="th">存在隐患</view>
+     <view class="th ">检查人</view>
+   </view>
+   <block wx:for="{{List}}" wx:key="{[code]}">
+      <view class="tr bg-g" wx:if="{{index % 2 == 0}}">
+        <view class="td">{{item.place}}</view>
+        <view class="td">{{item.unqualified}}</view>
+        <view class="td">{{item.examiner}}</view>
+      </view>
+      <view class="tr" wx:else>
+        <view class="td">{{item.place}}</view>
+        <view class="td">{{item.unqualified}}</view>
+        <view class="td">{{item.examiner}}</view>
+      </view>
+    </block>
+</view>
+<button class="empty"></button>
+<view class="boox" style="position:fixed; bottom:0;width: 750rpx;">
+  <view class="cu-bar tabbar bg-white">
+    <view class="action" bindtap="tofirstpage">
+      <view class="cuIcon-cu-image">
+        <image src="/pages/home.png"></image>
+      </view>
+      <view class="text-gray">首页</view>
+    </view>
+    <view class="action">
+      <view class="cuIcon-cu-image">
+        <image src="/pages/showdata.png"></image>
+      </view>
+      <view class="text-gray">检查清单</view>
+    </view>
+    <view class="action" bindtap="tocheckline">
+      <view class="cuIcon-cu-image">
+        <view class="list">
+        <image src="/pages/list.png"></image>
+      </view>
+      </view>
+      <view class="text-gray">检查状况</view>
+    </view>
+    <view class="action" bindtap="toindex">
+      <view class="cuIcon-cu-image">
+        <view class="info">
+        <image src="/pages/info.png"></image>
+      </view>
+      </view>
+      <view class="text-gray">个人信息</view>
+    </view>
+  </view>
+</view>
+
+
+

@@ -1,0 +1,27 @@
+/* pages/firstpage/science/science.wxss */
+.title{
+  text-align: center;
+  font-size: xx-large;
+  border-bottom: 3px solid gray;
+}
+.content{
+  align-self: center;
+  display:flex;
+  flex-direction: row;
+}
+.photo{
+  border-radius: 25px;
+  width: 300rpx;
+  height: 300rpx;
+  margin: 20rpx;
+}
+.changeleft,.changeright{
+  text-align: center;
+  border-bottom:1px solid gray;
+}
+page {
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}

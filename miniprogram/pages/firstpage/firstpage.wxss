@@ -1,0 +1,32 @@
+/* pages/firstpage/firstpage.wxss */
+.box{
+  bottom: 0px;
+}
+.title{
+  text-align: center;
+  font-size: xx-large;
+  border-bottom: 3px solid gray;
+}
+.content1{
+  margin-top: 1cm;
+  align-self: center;
+  display:flex;
+  flex-direction: row;
+}
+.content{
+  align-self: center;
+  display:flex;
+  flex-direction: row;
+}
+.photo{
+  border-radius: 25px;
+  width: 300rpx;
+  height: 300rpx;
+  margin: 20rpx;
+}
+.changeleft{
+  text-align: center;
+}
+.changeright{
+  text-align:center;
+}

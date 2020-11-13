@@ -1,0 +1,6 @@
+/* pages/firstpage/sservice/sservice.wxss */
+.unknown{
+  font-size: xx-large;
+  text-align: center;
+  
+}

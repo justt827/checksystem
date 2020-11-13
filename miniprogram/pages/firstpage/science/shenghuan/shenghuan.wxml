@@ -1,0 +1,70 @@
+<!--pages/firstpage/science/shenghuan/shenghuan.wxml-->
+<!--pages/shenghuan_school/shenghuan.wxml-->
+<view class="xueyuantitle">
+  生环学院安全负责人：XXX
+</view>
+<view class="icon-box">
+      <i class="{{gate}}"></i>
+      <view class="icon-box__ctn">
+        <h3 class="icon-box__title">请检查生环学院大门并拍照</h3>
+      </view>
+        </view>
+<button class="check_but" bindtap="okkkk">
+    <view class="item-link">开始检查</view>
+</button>
+<view class="icon-box">
+      <i class="{{place}}"></i>
+      <view class="icon-box__ctn">
+        <h3 class="icon-box__title">请检查生环学院公共区域并拍照</h3>
+      </view>
+        </view>
+<button class="check_but" bindtap="okkkk1">
+    <view class="item-link">开始检查</view>
+</button>
+<view class="icon-box">
+      <i class="{{lab1}}"></i>
+      <view class="icon-box__ctn">
+        <h3 class="icon-box__title">请检查生环学院实验室</h3>
+      </view>
+        </view>
+<button class="check_but" bindtap="okkkk2">
+    <view class="item-link">开始检查</view>
+</button>
+
+<button class="check_but1" bindtap="okkkkkk">
+  <image class="tijiao" src="/pages/tijiao.png"></image>
+  <view class="item-link">提交</view>
+</button>
+<button class="empty"></button>
+<view class="boox" style="position:fixed; bottom:0;width: 750rpx;">
+  <view class="cu-bar tabbar bg-white">
+    <view class="action" bindtap="tofirstpage">
+      <view class="cuIcon-cu-image">
+        <image src="/pages/home.png"></image>
+      </view>
+      <view class="text-gray">首页</view>
+    </view>
+    <view class="action" bindtap="toshowdata">
+      <view class="cuIcon-cu-image">
+        <image src="/pages/showdata.png"></image>
+      </view>
+      <view class="text-gray">检查清单</view>
+    </view>
+    <view class="action" bindtap="tocheckline">
+      <view class="cuIcon-cu-image">
+        <view class="list">
+        <image src="/pages/list.png"></image>
+      </view>
+      </view>
+      <view class="text-gray">检查状况</view>
+    </view>
+    <view class="action" bindtap="toindex">
+      <view class="cuIcon-cu-image">
+        <view class="info">
+        <image src="/pages/info.png"></image>
+      </view>
+      </view>
+      <view class="text-gray">个人信息</view>
+    </view>
+  </view>
+</view>
